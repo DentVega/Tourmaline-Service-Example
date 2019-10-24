@@ -11,8 +11,6 @@ import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
 
-import androidx.localbroadcastmanager.content.LocalBroadcastManager;
-
 import com.brianvega.tourmalineserviceexample.Constants;
 import com.brianvega.tourmalineserviceexample.MainApplication;
 import com.brianvega.tourmalineserviceexample.R;
@@ -33,11 +31,12 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 public class TLKitManager {
 
-    private static final String ApiKey = Constants.API_KEY;
-    private static final String TAG = "TLKitManager";
+    public static final String ApiKey = Constants.API_KEY;
+    public static final String TAG = "TLKitManager";
 
     static void startMonitoring(
             final Monitoring.State monitoring,
@@ -190,7 +189,7 @@ public class TLKitManager {
         }
     }
 
-    static void initTourmalineService(
+    public static void initTourmalineService(
             final ActivityListener activityListener,
             final TelematicsEventListener telematicsListener,
             final LocationListener locationListener,

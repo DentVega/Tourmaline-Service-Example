@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 public class Preferences {
 
-    private static Preferences instance;
+    public static Preferences instance;
 
     private Preferences(final SharedPreferences preferences){ this.preferences = preferences; }
 

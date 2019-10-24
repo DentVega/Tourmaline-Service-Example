@@ -52,17 +52,14 @@ public class TLKitService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         this.handler.post(this.runnableCode);
-        String email = SharedPreferencesUtil.getEmail(this);
-        if (!email.equals(Constants.TEXT_NO_EMAIL_DEFINED)) {
-            TLKitManager.startMonitoring(
-                    Monitoring.State.AUTOMATIC,
-                    MainApplication.getAppContext(),
-                    activityListener,
-                    telematicsListener,
-                    locationListener,
-                    email
-            );
-        }
+        TLKitManager.startMonitoring(
+                Monitoring.State.AUTOMATIC,
+                MainApplication.getAppContext(),
+                activityListener,
+                telematicsListener,
+                locationListener,
+                Constants.EMAIL_USER
+        );
         return START_STICKY;
     }
 }

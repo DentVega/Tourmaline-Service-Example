@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">TourmalineServiceExample</string>
     <string name="start_service">start service</string>
+    <string name="start_service_background">start service background</string>
     <string name="tourmaline_service">Tourmaline Service Example</string>
     <string name="foreground_notification_content_text">Automatically detecting and logging your travels for driving score computation.</string>
 </resources>

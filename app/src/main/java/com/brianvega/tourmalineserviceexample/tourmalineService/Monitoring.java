@@ -4,7 +4,7 @@ import android.content.Context;
 
 public class Monitoring {
 
-    private static final String MONITORING_STATE = "PrefMonitoringState";
+    public static final String MONITORING_STATE = "PrefMonitoringState";
 
     public enum State { STOPPED, AUTOMATIC, MANUAL }
 
