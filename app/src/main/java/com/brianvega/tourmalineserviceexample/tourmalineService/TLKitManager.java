@@ -58,10 +58,6 @@ public class TLKitManager {
                     stopMonitoring(context, activityListener, telematicsListener, locationListener);
                 }
             }, context, email);
-        } if (!Engine.IsMonitoringDrives()){
-            TLKitManager.registerActivityListener(activityListener);
-            TLKitManager.registerLocationListener(locationListener);
-            TLKitManager.registerTelematicsListener(telematicsListener);
         } else {
             Log.d(TAG,"tourmaline init");
         }
