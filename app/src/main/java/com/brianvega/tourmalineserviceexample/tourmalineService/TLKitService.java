@@ -10,7 +10,6 @@ import androidx.annotation.Nullable;
 
 import com.brianvega.tourmalineserviceexample.Constants;
 import com.brianvega.tourmalineserviceexample.MainApplication;
-import com.brianvega.tourmalineserviceexample.utils.SharedPreferencesUtil;
 import com.tourmaline.context.ActivityListener;
 import com.tourmaline.context.LocationListener;
 import com.tourmaline.context.TelematicsEventListener;
